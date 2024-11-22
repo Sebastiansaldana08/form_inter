@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Casos Estudiantiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario único de atención - OAMRA</h1>
+
+    <section id="login-section">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <label for="login-email">Correo Electrónico:</label>
+            <input type="email" id="login-email" name="login-email" required>
+            <label for="login-password">Contraseña:</label>
+            <input type="password" id="login-password" name="login-password" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p id="login-mensaje" style="color: red;"></p>
+    </section>
+
+    <section id="form-section" style="display:none;">
+        <h2>Registrar Nuevo Caso</h2>
+        <form id="form-interno">
+            <label for="email">Correo Institucional del Alumno:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="correo_personal">Correo Personal del Alumno:</label>
+            <input type="email" id="correo_personal" name="correo_personal" required>
+
+            <label for="unidad_atencion">Unidad de Atención:</label>
+            <select id="unidad_atencion" name="unidad_atencion" required>
+                <option value="" disabled selected>Seleccione Unidad de Atención</option>
+                <option value="Oficina Universitaria de Bienestar Estudiantil">Oficina Universitaria de Bienestar Estudiantil</option>
+                <option value="Oficina Universitaria de Becas">Oficina Universitaria de Becas</option>
+                <option value="Dirección Administrativa de Economía y Finanzas (DAEF)">Dirección Administrativa de Economía y Finanzas (DAEF)</option>
+                <option value="Dirección de Tecnología de Información (DTI)">Dirección de Tecnología de Información (DTI)</option>
+            </select>
+
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" name="documento" required>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="celular" required>
+
+            <label for="formacion">Formación:</label>
+            <input type="text" id="formacion" name="formacion" required>
+
+            <label for="carrera">Carrera:</label>
+            <input type="text" id="carrera" name="carrera" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="adjunto1">Adjuntar Archivo 1 (Máx 10mb):</label>
+            <input type="file" id="adjunto1" name="adjunto1" accept="image/*,application/pdf">
+
+            <label for="adjunto2">Adjuntar Archivo 2 (Máx 10mb):</label>
+            <input type="file" id="adjunto2" name="adjunto2" accept="image/*,application/pdf">
+
+            <label for="adjunto3">Adjuntar Archivo 3 (Máx 10mb):</label>
+            <input type="file" id="adjunto3" name="adjunto3" accept="image/*,application/pdf">
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje-estado" style="color: green;"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
